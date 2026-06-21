@@ -1,8 +1,6 @@
 import React from "react";
 import NextLink from "next/link";
 import { Alert, Card, CardBody, CardHeader, Button, Link, cn } from "@heroui/react";
-import DotGrid from "@/components/dotgrid";
-import TextType from "@/components/texttype";
 
 export default function Home() {
   return (
@@ -11,50 +9,20 @@ export default function Home() {
       <div
         className="relative h-96 flex items-center justify-center"
         style={{
-          backgroundImage: 'url("/images/hero.jpg")',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
+          backgroundImage: 'url("/images/hero.svg")',
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="absolute inset-0 bg-opacity-50"></div>
-        <div className="relative z-10 text-center px-6 py-6 max-w-4xl mx-auto bg-white bg-opacity-50" style={{ opacity: 0.95 }}>
-          <div className="text-black">
-            <h1 className="text-3xl md:text-5xl font-bold mb-4">
-              {/* Atlas */}
-                <TextType 
-                  text={["Atlas"]}
-                  typingSpeed={75}
-                  pauseDuration={1500}
-                  showCursor={true}
-                  cursorCharacter=""
-                  loop={false}
-                />
-            </h1>
-            <p className="text-lg md:text-xl mb-6 font-light">
-              We are Asia’s leading and trusted securities and derivatives market infrastructure, operating equity, fixed income, currency and commodity markets to the highest regulatory standards.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                as={NextLink}
-                href="#identity"
-                size="lg"
-                color="primary"
-                className="px-6 py-2"
-              >
-                Access Matrix
-              </Button>
-              <Button
-                as={NextLink}
-                href="#network"
-                size="lg"
-                variant="bordered"
-                className="px-6 py-2 text-black border-black hover:bg-black hover:text-white"
-              >
-                Network
-              </Button>
-            </div>
-          </div></div>
+        <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
+            Atlas
+          </h1>
+          <p className="text-lg md:text-xl text-white/90">
+            Internal operations platform
+          </p>
+        </div>
       </div>
 
       <div className="container mx-auto px-6 py-8 space-y-8">
